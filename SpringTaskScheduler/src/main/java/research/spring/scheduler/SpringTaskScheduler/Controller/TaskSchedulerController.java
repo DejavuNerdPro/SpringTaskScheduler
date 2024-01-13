@@ -1,9 +1,9 @@
 package research.spring.scheduler.SpringTaskScheduler.Controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class TaskSchedulerController {
 
     @GetMapping("/")
@@ -11,4 +11,8 @@ public class TaskSchedulerController {
         return "home";
     }
 
+    @GetMapping("/Home/home")
+    public String Home() {
+        return "Home/home";
+    }
 }
